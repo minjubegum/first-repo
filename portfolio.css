@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'arial',sans-serif;
+}
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+/* header & Navigation */
+header {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    min-width: 60%;
+    margin: 0 auto;
+}
+.name {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #333;
+}
+.nav_links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 600
+}
+.nav_links a:hover {
+    color: #0077b5; /*LinkedIn blue as accent */
+}
+/* Hero Section */
+.hero {
+    padding: 100px 0;
+    text-align: center;
+    background: #e3f2fd;
+    margin-top: 60px; /* Avoid header overlap */
+}
+.hero img {
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.hero h1 {
+    margin: 20px 0;
+    font-size: 2.5rem;
+}
+/*Sections */
+section {
+    padding: 60px 0;
+}
+.section_title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.section_title h2, .section_title h3 {
+    font-size: 2rem;
+    color: #333;
+}
+.section_title p {
+    color: #777;
+}
+/* Education & Skils */
+.education_item {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.skill_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.skill-pill {
+    background: #0077b5;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: #0077b5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: background 0.3s ;
+}
+.btn:hover {
+    background: #005f8b;
+}
+/* Contact & Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* contact section links */
+#contact .social-links a {
+    color: #0077b5;
+    font-weight: 600;
+}
+
+/* Responsive Adjustments */
+@media (max-width:768px) {
+    nav {
+        flex-direction: column;
+    }
+    .nav_links {
+        margin-top: 15px;
+    }
+    .nav_links a {
+        margin: 0 10px;
+    }
+}
